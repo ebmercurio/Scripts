@@ -1,0 +1,7 @@
+--query shwing all STUDENTS who have GPA greater than or equal to 3.0
+
+select *
+	from Student
+	where GPA >= (select avg(gpa) from Student); --SUBQUERY ALMOST ALWAYS IN WHERE CLAUSE. USE SUBQUERY WHEN WE NEED TO GET SOMETHING THAT IS CALCULATED
+
+	--GO BACK TO SALES DB. CUSTOMERS WHOSE SALES ARE LESS THAN THE AVG OF ALL CUSTOMER SALES.
