@@ -12,7 +12,6 @@ SELECT *
 
 
 
-
 select *
 	from Major
 	where MinSAT >= 1000
